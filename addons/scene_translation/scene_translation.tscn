@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b5nk4br7qdh5u"]
 
-[ext_resource type="Script" path="res://addons/my_custom_node/scene_translation.gd" id="1_tjv6g"]
+[ext_resource type="Script" path="res://addons/scene_translation/scene_translation.gd" id="1_tjv6g"]
 
 [node name="SceneTranslation" type="CanvasLayer"]
 process_mode = 3
