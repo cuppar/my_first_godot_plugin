@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bv8kwu4c2xha4"]
+
+[ext_resource type="Script" path="res://addons/my_custom_node/my_button.gd" id="1_apaqm"]
+[ext_resource type="Script" path="res://test.gd" id="1_ti0xy"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ti0xy")
+
+[node name="MyButton" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "MyButton"
+script = ExtResource("1_apaqm")
+
+[connection signal="pressed" from="MyButton" to="." method="_on_my_button_pressed"]

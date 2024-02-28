@@ -1,0 +1,29 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="my_first_godot_plugin"
+run/main_scene="res://test.tscn"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+config/icon="res://addons/my_custom_node/icon.svg"
+
+[autoload]
+
+SceneTranslation="*res://addons/scene_translation/scene_translation.tscn"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/my_custom_node/plugin.cfg", "res://addons/scene_translation/plugin.cfg", "res://addons/toggle_external_editor/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
